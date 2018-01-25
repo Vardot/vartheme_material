@@ -1,0 +1,99 @@
+core: 8.x
+type: theme
+base theme: vartheme_material
+
+name: 'Vartheme Material Sub-Theme (LESS)'
+description: 'Uses the Bootstrap framework LESS source files and must be compiled (not for beginners).'
+package: 'Varbase'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  hero_slider: 'Media Hero Slider'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+# Bootstrap styles and scripts libraries.
+  - VARTHEME_MATERIAL_SUBTHEME/bootstrap-styles
+  - VARTHEME_MATERIAL_SUBTHEME/bootstrap-scripts
+  
+# VARTHEME_MATERIAL_SUBTHEME custom Vartheme Material styles and scripts libraries.
+  - VARTHEME_MATERIAL_SUBTHEME/vartheme_material-styles
+
+# VARTHEME_MATERIAL_SUBTHEME global styles and scripts libraries.
+  - VARTHEME_MATERIAL_SUBTHEME/global-styles
+  - VARTHEME_MATERIAL_SUBTHEME/global-scripts
+  
+# VARTHEME_MATERIAL_SUBTHEME Varbase Bootstrap Paragraphs colors theme.
+  - VARTHEME_MATERIAL_SUBTHEME/vbp-colors
+  
+# VARTHEME_MATERIAL_SUBTHEME Better Login theme.
+#  - VARTHEME_MATERIAL_SUBTHEME/betterlogin
+
+# OPTIONALLY: You can choose to remove Vartheme Material base theme stylesheets and/or
+# Javascript files.
+libraries-override:
+# Comment lines to keep using libraries from vartheme_material.
+  bootstrap_library/bootstrap-cdn: false
+  bootstrap_library/bootstrap: false
+  bootstrap_library/bootstrap-dev: false
+  vartheme_material/bootstrap-styles: false
+  vartheme_material/bootstrap-scripts: false
+  vartheme_material/global-styles: false
+  vartheme_material/global-scripts: false
+
+# Comment lines to use (RTL) libraries from vartheme_material.
+  vartheme_material/bootstrap-styles-rtl: false
+  vartheme_material/global-styles-rtl: false
+  VARTHEME_MATERIAL_SUBTHEME/bootstrap-styles-rtl: false
+  VARTHEME_MATERIAL_SUBTHEME/vartheme_material-styles-rtl: false
+  VARTHEME_MATERIAL_SUBTHEME/global-styles-rtl: false
+
+# VARTHEME_MATERIAL_SUBTHEME Varbase Bootstrap Paragraphs colors theme.
+  varbase_bootstrap_paragraphs/vbp-colors: VARTHEME_MATERIAL_SUBTHEME/vbp-colors
+  vartheme_material/vbp-colors: VARTHEME_MATERIAL_SUBTHEME/vbp-colors
+#  vartheme_material/betterlogin: VARTHEME_MATERIAL_SUBTHEME/betterlogin
+  
+# Uncomment lines to replace, exclude css and js files from vartheme_material.
+# You will need to copy less/css files from Vartheme Material to use theme for the
+# overriden library.
+# ------------------------------------------------------------------------------
+#  vartheme_material/bs-callouts: VARTHEME_MATERIAL_SUBTHEME/bs-callouts
+#  vartheme_material/outside-in: VARTHEME_MATERIAL_SUBTHEME/outside-in
+#  vartheme_material/edge2edge: VARTHEME_MATERIAL_SUBTHEME/edge2edge
+#  vartheme_material/navbar-admin: VARTHEME_MATERIAL_SUBTHEME/navbar-admin
+# ------------------------------------------------------------------------------
+#  vartheme_material/ajax: VARTHEME_MATERIAL_SUBTHEME/ajax
+#  vartheme_material/alert: VARTHEME_MATERIAL_SUBTHEME/alert
+#  vartheme_material/field: VARTHEME_MATERIAL_SUBTHEME/field
+#  vartheme_material/file: VARTHEME_MATERIAL_SUBTHEME/file
+#  vartheme_material/filter: VARTHEME_MATERIAL_SUBTHEME/filter
+#  vartheme_material/form: VARTHEME_MATERIAL_SUBTHEME/form
+#  vartheme_material/icon: VARTHEME_MATERIAL_SUBTHEME/icon
+#  vartheme_material/navbar: VARTHEME_MATERIAL_SUBTHEME/navbar
+#  vartheme_material/node: VARTHEME_MATERIAL_SUBTHEME/node
+#  vartheme_material/panel: VARTHEME_MATERIAL_SUBTHEME/panel
+#  vartheme_material/progress-bar: VARTHEME_MATERIAL_SUBTHEME/progress-bar
+#  vartheme_material/table-drag: VARTHEME_MATERIAL_SUBTHEME/table-drag
+#  vartheme_material/tabs: VARTHEME_MATERIAL_SUBTHEME/tabs
+#  vartheme_material/toolbar: VARTHEME_MATERIAL_SUBTHEME/toolbar
+#  vartheme_material/autocomplete: VARTHEME_MATERIAL_SUBTHEME/autocomplete
+
+ckeditor_stylesheets:
+  - css/base/bootstrap.base.css
+  - css/base/vartheme_material.base.css
+  - css/base/VARTHEME_MATERIAL_SUBTHEME.base.css
+  - css/theme/content.theme.css
+  - css/component/alert.component.css
+  - css/component/icon.component.css
+  - css/component/node.component.css
+  - css/component/bs-callouts.component.css
+  - css/layout/edge2edge.layout.css

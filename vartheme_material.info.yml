@@ -1,0 +1,79 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+
+name: Vartheme Material
+description: A base theme for Varbase standard websites. Based on Bootstrap theme with Bootstrap 3 and Material Design.
+package: 'Varbase'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  hero_slider: 'Media Hero Slider'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries:
+# Bootstrap styles and scripts libraries.
+  - vartheme_material/bootstrap-styles
+  - vartheme_material/bootstrap-scripts
+
+# Boostrap component libraries.
+  - vartheme_material/ajax
+  - vartheme_material/alert
+  - vartheme_material/field
+  - vartheme_material/file
+  - vartheme_material/filter
+  - vartheme_material/form
+  - vartheme_material/icon
+  - vartheme_material/navbar
+  - vartheme_material/node
+  - vartheme_material/panel
+  - vartheme_material/progress-bar
+  - vartheme_material/table-drag
+  - vartheme_material/tabs
+  - vartheme_material/toolbar
+  - vartheme_material/autocomplete
+
+# Vartheme Material custom theme, layout, and component libraries.
+  - vartheme_material/navbar-admin
+  - vartheme_material/bs-callouts
+  - vartheme_material/outside-in
+  - vartheme_material/edge2edge
+  - vartheme_material/bootstrap-print
+  - vartheme_material/bootstrap-no-spacing
+
+# Vartheme Material general global styles and scripts libraries.
+  - vartheme_material/global-styles
+  - vartheme_material/global-scripts
+
+# Vartheme Material Varbase Bootstrap Paragraphs colors theme.
+  - vartheme_material/vbp-colors
+
+# Vartheme Material Better Login theme.
+  - vartheme_material/betterlogin
+
+# Vartheme Material Varbase Bootstrap Paragraphs colors theme.
+libraries-override:
+  varbase_bootstrap_paragraphs/vbp-colors: vartheme_material/vbp-colors
+  betterlogin/betterlogin_css: vartheme_material/betterlogin
+#  bootstrap_library/bootstrap-cdn: false
+#  bootstrap_library/bootstrap: false
+#  bootstrap_library/bootstrap-dev: false
+
+ckeditor_stylesheets:
+  - css/base/bootstrap.base.css
+  - css/base/vartheme_material.base.css
+  - css/theme/content.theme.css
+  - css/component/alert.component.css
+  - css/component/icon.component.css
+  - css/component/node.component.css
+  - css/component/bs-callouts.component.css
+  - css/layout/edge2edge.layout.css

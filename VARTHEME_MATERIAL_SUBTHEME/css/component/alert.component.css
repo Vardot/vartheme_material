@@ -1,0 +1,26 @@
+.alert-sm {
+  padding: 5px 10px;
+}
+.alert a {
+  font-weight: bold;
+}
+.alert-success a,
+.alert-success a:hover,
+.alert-success a:focus {
+  color: #3d8b40;
+}
+.alert-info a,
+.alert-info a:hover,
+.alert-info a:focus {
+  color: #771e86;
+}
+.alert-warning a,
+.alert-warning a:hover,
+.alert-warning a:focus {
+  color: #cc7a00;
+}
+.alert-danger a,
+.alert-danger a:hover,
+.alert-danger a:focus {
+  color: #b9151b;
+}

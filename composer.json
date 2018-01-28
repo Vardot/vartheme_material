@@ -1,0 +1,31 @@
+{
+  "name": "drupal/vartheme_material",
+  "description": "A base theme for Varbase standard websites. Based on Bootstrap theme with Bootstrap 3 and Material Design.",
+  "type": "drupal-theme",
+  "homepage": "https://www.drupal.org/project/vartheme_material",
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Vardot",
+      "homepage": "https://www.drupal.org/vardot",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "http://drupal.org/project/issues/vartheme_material",
+    "source": "http://cgit.drupalcode.org/vartheme_material"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  ],
+  "require": { },
+  "extra": {
+    "branch-alias": {
+      "dev-8.x-4.x": "8.4.x-dev"
+    }
+  }
+}

@@ -43,8 +43,14 @@
   background: #fff;
   padding: 10px;
   position: relative;
-  top: -20px;
+  top: -34px;
 }
 #auth-box .user-login-form {
   text-align: left;
+}
+*[dir="rtl"] #auth-box .user-login-form {
+  text-align: right;
+}
+*[dir="rtl"] #auth-box .user-login-form .form-checkbox {
+  margin-left: 5px;
 }

@@ -20,17 +20,21 @@
           {% endblock %}
         {% endif %}
       </div>
-      <div id="middle-part">
-        {{ page.header|without('VARTHEME_MATERIAL_SUBTHEME_local_tasks', 'VARTHEME_MATERIAL_SUBTHEME_breadcrumbs', 'VARTHEME_MATERIAL_SUBTHEME_local_actions', 'VARTHEME_MATERIAL_SUBTHEME_page_title') }}
-        {% if (VARBASE_AUTH.modules_enabled.value) and (page.content.socialauthlogin) %}
-          <h2 class="block-title"><span> {{ "Sign up with"|t }} </span></h2>
-          {{ page.content.socialauthlogin }}
-          <h2 class="block-title"><span> {{ "or"|t }} </span></h2>
-          {{ page.content|without('socialauthlogin') }}
-        {% else %}
-          <h2 class="block-title"><span> {{ title }} </span></h2>
-          {{ page.content }}
-        {% endif %}
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div id="middle-part">
+            {{ page.header|without('VARTHEME_MATERIAL_SUBTHEME_local_tasks', 'VARTHEME_MATERIAL_SUBTHEME_breadcrumbs', 'VARTHEME_MATERIAL_SUBTHEME_local_actions', 'VARTHEME_MATERIAL_SUBTHEME_page_title') }}
+            {% if (VARBASE_AUTH.modules_enabled.value) and (page.content.socialauthlogin) %}
+              <h2 class="block-title"><span> {{ "Sign up with"|t }} </span></h2>
+              {{ page.content.socialauthlogin }}
+              <h2 class="block-title"><span> {{ "or"|t }} </span></h2>
+              {{ page.content|without('socialauthlogin') }}
+            {% else %}
+              <h2 class="block-title"><span> {{ title }} </span></h2>
+              {{ page.content }}
+            {% endif %}
+          </div>
+        </div>
       </div>
       <div id="bottom-part">
       {% if not logged_in %}

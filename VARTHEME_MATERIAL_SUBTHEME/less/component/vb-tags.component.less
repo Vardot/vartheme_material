@@ -2,7 +2,6 @@
 // --------------------------------------------------
 // vb-tags: Styles a list of tags, which much looks like the pager with
 //          rounded borders.
-// vb-tags-label: Styles the label of tags list of items.
 // -----------------------------------------------------------------------------
 @import "../../bootstrap/less/variables.less";  // Bootstrap variables.
 @import "../../bootstrap/less/mixins.less";     // Bootstrap mixins.
@@ -15,7 +14,7 @@
 // --------------------------------------------------
 .vb-tags {
   padding-left: 0;
-  margin: floor(@line-height-computed/2) 0 @line-height-computed 0;
+  margin: @line-height-computed 0;
   list-style: none;
   &:extend(.clearfix all);
   li {
@@ -35,17 +34,6 @@
       background-color: @pager-hover-bg;
     }
   }
-
-  .disabled {
-    > a,
-    > a:hover,
-    > a:focus,
-    > span {
-      color: @pager-disabled-color;
-      background-color: @pager-bg;
-      cursor: @cursor-disabled;
-    }
-  }
 }
 
 //
@@ -54,28 +42,4 @@
 [dir="rtl"] .vb-tags {
   padding-right: 0;
   padding-left: initial;
-
-  .next {
-    > a,
-    > span {
-      float: left;
-    }
-  }
-
-  .previous {
-    > a,
-    > span {
-      float: right;
-    }
-  }
-
-}
-
-//
-// Vartheme Material Bootstrap tags component library. label styling.
-// --------------------------------------------------
-.vb-tags-label {
-  margin-top: floor(@line-height-computed/2);
-  color: @gray;
-  font-weight: bold;
 }

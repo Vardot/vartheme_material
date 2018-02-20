@@ -1,6 +1,6 @@
 .vb-tags {
   padding-left: 0;
-  margin: 11px 0 23px 0;
+  margin: 23px 0;
   list-style: none;
 }
 .vb-tags li {
@@ -19,28 +19,7 @@
   text-decoration: none;
   background-color: #eeeeee;
 }
-.vb-tags .disabled > a,
-.vb-tags .disabled > a:hover,
-.vb-tags .disabled > a:focus,
-.vb-tags .disabled > span {
-  color: #bbb;
-  background-color: #fff;
-  cursor: not-allowed;
-}
 [dir="rtl"] .vb-tags {
   padding-right: 0;
   padding-left: initial;
-}
-[dir="rtl"] .vb-tags .next > a,
-[dir="rtl"] .vb-tags .next > span {
-  float: left;
-}
-[dir="rtl"] .vb-tags .previous > a,
-[dir="rtl"] .vb-tags .previous > span {
-  float: right;
-}
-.vb-tags-label {
-  margin-top: 11px;
-  color: #666;
-  font-weight: bold;
 }

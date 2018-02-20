@@ -1,0 +1,81 @@
+// Vartheme Material Bootstrap tags component styling.
+// --------------------------------------------------
+// vb-tags: Styles a list of tags, which much looks like the pager with
+//          rounded borders.
+// vb-tags-label: Styles the label of tags list of items.
+// -----------------------------------------------------------------------------
+@import "../../bootstrap/less/variables.less";  // Bootstrap variables.
+@import "../../bootstrap/less/mixins.less";     // Bootstrap mixins.
+@import "../variables.less";                    // Vartheme Material variables.
+@import "../mixins.less";                       // Vartheme Material mixins.
+// -----------------------------------------------------------------------------
+
+//
+// Vartheme Material Bootstrap tags component styling.
+// --------------------------------------------------
+.vb-tags {
+  padding-left: 0;
+  margin: floor(@line-height-computed/2) 0 @line-height-computed 0;
+  list-style: none;
+  &:extend(.clearfix all);
+  li {
+    display: inline;
+    > a,
+    > span {
+      display: inline-block;
+      padding: 5px 14px;
+      background-color: @pager-bg;
+      border: 1px solid @pager-border;
+      border-radius: @pager-border-radius;
+    }
+
+    > a:hover,
+    > a:focus {
+      text-decoration: none;
+      background-color: @pager-hover-bg;
+    }
+  }
+
+  .disabled {
+    > a,
+    > a:hover,
+    > a:focus,
+    > span {
+      color: @pager-disabled-color;
+      background-color: @pager-bg;
+      cursor: @cursor-disabled;
+    }
+  }
+}
+
+//
+// Vartheme Material Bootstrap tags component RTL styling.
+// --------------------------------------------------
+[dir="rtl"] .vb-tags {
+  padding-right: 0;
+  padding-left: initial;
+
+  .next {
+    > a,
+    > span {
+      float: left;
+    }
+  }
+
+  .previous {
+    > a,
+    > span {
+      float: right;
+    }
+  }
+
+}
+
+//
+// Vartheme Material Bootstrap tags component library. label styling.
+// --------------------------------------------------
+.vb-tags-label {
+  margin-top: floor(@line-height-computed/2);
+  color: @gray;
+  font-weight: bold;
+}

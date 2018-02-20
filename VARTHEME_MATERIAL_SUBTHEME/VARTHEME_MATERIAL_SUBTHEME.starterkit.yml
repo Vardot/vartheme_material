@@ -67,6 +67,7 @@ libraries-override:
 # overriden library.
 # ------------------------------------------------------------------------------
 #  vartheme_material/bs-callouts: VARTHEME_MATERIAL_SUBTHEME/bs-callouts
+#  vartheme_material/vb-tags: VARTHEME_MATERIAL_SUBTHEME/vb-tags
 #  vartheme_material/outside-in: VARTHEME_MATERIAL_SUBTHEME/outside-in
 #  vartheme_material/edge2edge: VARTHEME_MATERIAL_SUBTHEME/edge2edge
 #  vartheme_material/navbar-admin: VARTHEME_MATERIAL_SUBTHEME/navbar-admin

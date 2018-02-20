@@ -45,6 +45,7 @@ libraries:
 # Vartheme Material custom theme, layout, and component libraries.
   - vartheme_material/navbar-admin
   - vartheme_material/bs-callouts
+  - vartheme_material/vb-tags
   - vartheme_material/outside-in
   - vartheme_material/edge2edge
   - vartheme_material/bootstrap-print

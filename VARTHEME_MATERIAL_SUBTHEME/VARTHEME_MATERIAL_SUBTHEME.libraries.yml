@@ -112,6 +112,12 @@ bootstrap-scripts:
 #    component:
 #      css/component/bs-callouts.component.css: {}
 
+# Vartheme Material Bootstrap tags component library.
+#vb-tags:
+#  css:
+#    component:
+#      css/component/vb-tags.component.css: {}
+
 # Vartheme Material Outside in component library.
 #outside-in:
 #  css:

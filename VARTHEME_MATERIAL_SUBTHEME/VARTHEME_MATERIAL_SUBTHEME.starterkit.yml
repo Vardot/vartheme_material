@@ -68,8 +68,10 @@ libraries-override:
 # ------------------------------------------------------------------------------
 #  vartheme_material/bs-callouts: VARTHEME_MATERIAL_SUBTHEME/bs-callouts
 #  vartheme_material/vb-tags: VARTHEME_MATERIAL_SUBTHEME/vb-tags
+#  vartheme_material/card: VARTHEME_MATERIAL_SUBTHEME/card
 #  vartheme_material/outside-in: VARTHEME_MATERIAL_SUBTHEME/outside-in
 #  vartheme_material/edge2edge: VARTHEME_MATERIAL_SUBTHEME/edge2edge
+#  vartheme_material/equal-height: VARTHEME_MATERIAL_SUBTHEME/equal-height
 #  vartheme_material/navbar-admin: VARTHEME_MATERIAL_SUBTHEME/navbar-admin
 # ------------------------------------------------------------------------------
 #  vartheme_material/ajax: VARTHEME_MATERIAL_SUBTHEME/ajax

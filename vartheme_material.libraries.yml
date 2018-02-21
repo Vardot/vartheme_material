@@ -92,6 +92,12 @@ edge2edge:
   css:
     layout:
       css/layout/edge2edge.layout.css: {}
+      
+# Vartheme Material Equal height layout library.
+equal-height:
+  css:
+    layout:
+      css/layout/equal-height.layout.css: {}
 
 # Vartheme Material Bootstrap Callouts component library.
 bs-callouts:
@@ -104,6 +110,12 @@ vb-tags:
   css:
     component:
       css/component/vb-tags.component.css: {}
+      
+# Vartheme Material bootstrap card component.
+card:
+  css:
+    component:
+      css/component/card.component.css: {}
 
 # Vartheme Material Outside in component library.
 outside-in:

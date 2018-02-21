@@ -46,8 +46,10 @@ libraries:
   - vartheme_material/navbar-admin
   - vartheme_material/bs-callouts
   - vartheme_material/vb-tags
+  - vartheme_material/card
   - vartheme_material/outside-in
   - vartheme_material/edge2edge
+  - vartheme_material/equal-height
   - vartheme_material/bootstrap-print
   - vartheme_material/bootstrap-no-spacing
 

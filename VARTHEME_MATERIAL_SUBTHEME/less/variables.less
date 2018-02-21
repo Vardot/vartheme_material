@@ -75,7 +75,7 @@
 //## Specify custom location and filename of the included Glyphicons icon font. Useful for those including Bootstrap via Bower.
 
 //** Load fonts from this directory.
-@icon-font-path:          "../fonts/";
+@icon-font-path:          "../../bootstrap/fonts/";
 //** File name for all font files.
 @icon-font-name:          "glyphicons-halflings-regular";
 //** Element ID within SVG icon file.
@@ -867,6 +867,10 @@
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
 
+// =============================================================================
+// Custom Vartheme Material variables.
+// =============================================================================
+
 // Media query variables.
 @mobile:          ~"screen and (max-width: @{screen-xs-max})";
 @tablet:          ~"screen and (min-width: @{screen-sm-min})";
@@ -874,8 +878,25 @@
 @wide:            ~"screen and (min-width: @{screen-lg-min})";
 @grid-breakpoint: ~"screen and (min-width: @{grid-float-breakpoint})";
 
-// Set the proper directory for the Bootstrap Glyphicon font.
-@icon-font-path: '../../bootstrap/fonts/';
+// Card bootstrap3 back-ported from bootstrap4.
+@card-spacer-y:                     0.75rem;
+@card-spacer-x:                     1.25rem;
+@card-border-width:                 1px;
+@card-border-radius:                @border-radius-base;
+@card-border-color:                 rgba(red(@gray-base), green(@gray-base), blue(@gray-base), 0.125);
+@card-inner-border-radius:          calc(@card-border-radius - @card-border-width);
+@card-cap-bg:                       rgba(red(@gray-base), green(@gray-base), blue(@gray-base), 0.03);
+@card-bg:                           #fff;
+
+@card-img-overlay-padding:          1.25rem;
+
+@card-group-margin:                 floor(@grid-gutter-width/2);
+@card-deck-margin:                  @card-group-margin;
+
+@card-columns-count:                3;
+@card-columns-gap:                  1.25rem;
+@card-columns-margin:               @card-spacer-y;
+
 
 // Footer wrapper background color.
 @footer-wrapper-bg:             #f2f2f2;

@@ -5,6 +5,8 @@
 @import "../variables.less";                    // VARTHEME_MATERIAL_SUBTHEME variables.
 @import "../mixins.less";                       // VARTHEME_MATERIAL_SUBTHEME mixins.
 // -----------------------------------------------------------------------------
+
+
 // Paper 3.3.7
 // Bootswatch
 // -----------------------------------------------------
@@ -739,18 +741,6 @@ html {
   width: 1px;
 }
 
-// Branding.
-.navbar .logo {
-  margin-right: -15px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media @tablet {
-    margin-right: 0;
-    padding-left: 0;
-  }
-}
-
 // Navigation.
 ul.secondary {
   float: left;
@@ -825,7 +815,10 @@ ul.action-links {
 }
 
 // Form elements.
-input, textarea, select, .uneditable-input {
+input,
+textarea,
+select,
+.uneditable-input {
   max-width: 100%;
   width: auto;
 }
@@ -1465,26 +1458,6 @@ img {
   }
 }
 
-// Node styles.
-.node-unpublished {
-  background-color: #fff4f4;
-}
-
-.unpublished {
-  height: 0;
-  display: block;
-  overflow: visible;
-  background-color: transparent;
-  color: #d8d8d8;
-  font-size: 74px;
-  line-height: 1;
-  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-  word-wrap: break-word
-}
-
 .maintenance-page {
   #page {
     text-align: center;
@@ -1506,4 +1479,16 @@ body.user-logged-in {
   .btn.visible-admin {
     display: inline-block !important;
   }
+}
+
+// Justify content to center.
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; 
 }

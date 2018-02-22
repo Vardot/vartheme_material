@@ -1526,3 +1526,13 @@ body.user-logged-in .visible-admin {
 body.user-logged-in .btn.visible-admin {
   display: inline-block !important;
 }
+.justify-content-center {
+  -webkit-box-pack: center!important;
+  -ms-flex-pack: center!important;
+  justify-content: center!important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}

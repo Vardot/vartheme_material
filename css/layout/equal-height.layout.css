@@ -6,6 +6,15 @@
   display: flex;
   flex-direction: column;
 }
+.equal-height .row > div[class*='col-'] article.node {
+  height: 100%;
+}
+.equal-height .row > div[class*='col-'] article.node div.main-content {
+  height: 100%;
+}
+.equal-height .row > div[class*='col-'] article.node div.main-content div.card {
+  height: 100%;
+}
 @media (max-width: 480px) {
   .equal-height-xs .row {
     display: flex;
@@ -14,6 +23,15 @@
   .equal-height-xs .row > div[class*='col-'] {
     display: flex;
     flex-direction: column;
+  }
+  .equal-height-xs .row > div[class*='col-'] article.node {
+    height: 100%;
+  }
+  .equal-height-xs .row > div[class*='col-'] article.node div.main-content {
+    height: 100%;
+  }
+  .equal-height-xs .row > div[class*='col-'] article.node div.main-content div.card {
+    height: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -25,6 +43,15 @@
     display: flex;
     flex-direction: column;
   }
+  .equal-height-sm .row > div[class*='col-'] article.node {
+    height: 100%;
+  }
+  .equal-height-sm .row > div[class*='col-'] article.node div.main-content {
+    height: 100%;
+  }
+  .equal-height-sm .row > div[class*='col-'] article.node div.main-content div.card {
+    height: 100%;
+  }
 }
 @media (min-width: 992px) {
   .equal-height-md .row {
@@ -35,6 +62,15 @@
     display: flex;
     flex-direction: column;
   }
+  .equal-height-md .row > div[class*='col-'] article.node {
+    height: 100%;
+  }
+  .equal-height-md .row > div[class*='col-'] article.node div.main-content {
+    height: 100%;
+  }
+  .equal-height-md .row > div[class*='col-'] article.node div.main-content div.card {
+    height: 100%;
+  }
 }
 @media (min-width: 1200px) {
   .equal-height-lg .row {
@@ -44,5 +80,14 @@
   .equal-height-lg .row > div[class*='col-'] {
     display: flex;
     flex-direction: column;
+  }
+  .equal-height-lg .row > div[class*='col-'] article.node {
+    height: 100%;
+  }
+  .equal-height-lg .row > div[class*='col-'] article.node div.main-content {
+    height: 100%;
+  }
+  .equal-height-lg .row > div[class*='col-'] article.node div.main-content div.card {
+    height: 100%;
   }
 }

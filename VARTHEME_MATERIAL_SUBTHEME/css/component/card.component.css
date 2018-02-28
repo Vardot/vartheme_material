@@ -110,7 +110,8 @@
     margin-left: 15px;
   }
 }
-.card-deck nav.pager-nav {
+.card-deck nav.pager-nav,
+.card-deck .view-empty {
   width: 100%;
 }
 .card-group {

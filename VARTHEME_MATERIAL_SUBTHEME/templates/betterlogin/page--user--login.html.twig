@@ -24,11 +24,11 @@
         <div class="panel-body">
           <div id="middle-part">
             {{ page.header|without('VARTHEME_MATERIAL_SUBTHEME_local_tasks', 'VARTHEME_MATERIAL_SUBTHEME_breadcrumbs', 'VARTHEME_MATERIAL_SUBTHEME_local_actions', 'VARTHEME_MATERIAL_SUBTHEME_page_title') }}
-            {% if (VARBASE_AUTH.modules_enabled.value) and (page.content.socialauthlogin) %}
+            {% if (varbase.we_do_have_enabled_social_auth_modules.value) and (page.content.VARTHEME_MATERIAL_SUBTHEME_socialauthlogin) %}
               <h2 class="block-title"><span> {{ "Login with"|t }} </span></h2>
-              {{ page.content.socialauthlogin }}
+              {{ page.content.VARTHEME_MATERIAL_SUBTHEME_socialauthlogin }}
               <h2 class="block-title"><span> {{ "or"|t }} </span></h2>
-              {{ page.content|without('socialauthlogin') }}
+              {{ page.content|without('VARTHEME_MATERIAL_SUBTHEME_socialauthlogin') }}
             {% else %}
               <h2 class="block-title"><span> {{ title }} </span></h2>
               {{ page.content }}

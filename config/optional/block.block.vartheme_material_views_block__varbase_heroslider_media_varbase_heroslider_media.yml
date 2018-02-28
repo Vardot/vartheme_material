@@ -8,12 +8,12 @@ dependencies:
     - system
     - views
   theme:
-    - VARTHEME_MATERIAL_SUBTHEME
+    - vartheme_material
 third_party_settings:
   block_class:
     classes: ''
-id: views_block__varbase_heroslider_media_varbase_heroslider_media
-theme: VARTHEME_MATERIAL_SUBTHEME
+id: vartheme_material_views_block__varbase_heroslider_media_varbase_heroslider_media
+theme: vartheme_material
 region: hero_slider
 weight: 0
 provider: null

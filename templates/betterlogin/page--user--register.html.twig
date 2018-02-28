@@ -24,7 +24,7 @@
         <div class="panel-body">
           <div id="middle-part">
             {{ page.header|without('vartheme_material_local_tasks', 'vartheme_material_breadcrumbs', 'vartheme_material_local_actions', 'vartheme_material_page_title') }}
-            {% if (VARBASE_AUTH.modules_enabled.value) and (page.content.socialauthlogin) %}
+            {% if (varbase.we_do_have_enabled_social_auth_modules.value) and (page.content.vartheme_material_socialauthlogin) %}
               <h2 class="block-title"><span> {{ "Sign up with"|t }} </span></h2>
               {{ page.content.socialauthlogin }}
               <h2 class="block-title"><span> {{ "or"|t }} </span></h2>

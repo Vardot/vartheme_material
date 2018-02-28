@@ -1,10 +1,9 @@
-core: 8.x
+name: 'Vartheme Material'
+description: 'A base theme for Varbase standard websites. Based on Bootstrap theme with Bootstrap 3 and Material Design.'
 type: theme
+package: 'Varbase (Experimental)'
+core: 8.x
 base theme: bootstrap
-
-name: Vartheme Material
-description: A base theme for Varbase standard websites. Based on Bootstrap theme with Bootstrap 3 and Material Design.
-package: 'Varbase'
 
 regions:
   navigation: 'Navigation'

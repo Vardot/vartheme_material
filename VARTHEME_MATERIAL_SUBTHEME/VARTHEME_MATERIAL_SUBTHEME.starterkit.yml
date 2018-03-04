@@ -90,6 +90,13 @@ libraries-override:
 #  vartheme_material/toolbar: VARTHEME_MATERIAL_SUBTHEME/toolbar
 #  vartheme_material/autocomplete: VARTHEME_MATERIAL_SUBTHEME/autocomplete
 
+#  Uncomment the following if you want to keep bootstrap/framework
+#    and you want to extend it.
+#libraries-extend:
+#  bootstrap/framework:
+#    - vartheme_material/framework
+#    - VARTHEME_MATERIAL_SUBTHEME/framework
+
 ckeditor_stylesheets:
   - css/base/bootstrap.base.css
   - css/base/vartheme_material.base.css

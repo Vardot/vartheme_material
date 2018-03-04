@@ -70,6 +70,12 @@ libraries-override:
 #  bootstrap_library/bootstrap: false
 #  bootstrap_library/bootstrap-dev: false
 
+#  Uncomment the following if you want to keep bootstrap/framework
+#    and you want to extend it.
+#libraries-extend:
+#  bootstrap/framework:
+#    - vartheme_material/framework
+
 ckeditor_stylesheets:
   - css/base/bootstrap.base.css
   - css/base/vartheme_material.base.css

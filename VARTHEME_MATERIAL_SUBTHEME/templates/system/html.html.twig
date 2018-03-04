@@ -62,10 +62,8 @@
     <css-placeholder token="{{ placeholder_token|raw }}">
     {# attache global styles RTL (right to left) if the html tag has dir=rtl #}
     {% if html_attributes['dir'] == 'rtl' %}
-      {{ attach_library('VARTHEME_MATERIAL_SUBTHEME/global-styles-rtl') }}
-      {{ attach_library('vartheme_material/global-styles-rtl') }}
-      {{ attach_library('vartheme_material/bootstrap-styles-rtl') }}
-      {{ attach_library('vartheme_material/bootstrap-print-rtl') }}
+      {{ attach_library('VARTHEME_MATERIAL_SUBTHEME/framework-rtl') }}
+      {{ attach_library('vartheme_material/framework-rtl') }}
     {%- endif -%}
     <js-placeholder token="{{ placeholder_token|raw }}">
   </head>

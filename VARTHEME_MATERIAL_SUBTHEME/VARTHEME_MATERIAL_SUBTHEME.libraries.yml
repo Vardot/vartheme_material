@@ -1,3 +1,37 @@
+# VARTHEME_MATERIAL_SUBTHEME framework as which could be used to extend bootstrap/framework
+# VARTHEME_MATERIAL_SUBTHEME/framework = VARTHEME_MATERIAL_SUBTHEME/bootstrap-styles
+#                                      + VARTHEME_MATERIAL_SUBTHEME/bootstrap-scripts
+#                                      + VARTHEME_MATERIAL_SUBTHEME/vartheme-styles
+#                                      + VARTHEME_MATERIAL_SUBTHEME/global-styles
+#                                      + VARTHEME_MATERIAL_SUBTHEME/global-scripts 
+#                                      + vartheme_material/bootstrap-print
+framework:
+  css: {}
+  js: {}
+  dependencies:
+    - core/jquery
+    - VARTHEME_MATERIAL_SUBTHEME/bootstrap-styles
+    - VARTHEME_MATERIAL_SUBTHEME/bootstrap-scripts
+    - VARTHEME_MATERIAL_SUBTHEME/vartheme_material-styles
+    - VARTHEME_MATERIAL_SUBTHEME/global-styles
+    - VARTHEME_MATERIAL_SUBTHEME/global-scripts
+    - vartheme_material/bootstrap-print
+
+# VARTHEME_MATERIAL_SUBTHEME framework RTL as which could be used to extend bootstrap/framework
+# VARTHEME_MATERIAL_SUBTHEME/framework-rtl = VARTHEME_MATERIAL_SUBTHEME/bootstrap-rtl
+#                                          + VARTHEME_MATERIAL_SUBTHEME/vartheme_material-styles-rtl
+#                                          + VARTHEME_MATERIAL_SUBTHEME/global-styles-rtl
+#                                          + vartheme_material/bootstrap-print-rtl
+framework-rtl:
+  css: {}
+  js: {}
+  dependencies:
+    - core/jquery
+    - VARTHEME_MATERIAL_SUBTHEME/bootstrap-rtl
+    - VARTHEME_MATERIAL_SUBTHEME/vartheme_material-styles-rtl
+    - VARTHEME_MATERIAL_SUBTHEME/global-styles-rtl
+    - vartheme_material/bootstrap-print-rtl
+
 # VARTHEME_MATERIAL_SUBTHEME global styles library.
 global-styles: 
   css:
@@ -7,6 +41,8 @@ global-styles:
       css/theme/header.theme.css: {}
       css/theme/content.theme.css: {}
       css/theme/footer.theme.css: {}
+  dependencies:
+    - core/jquery
 
 # VARTHEME_MATERIAL_SUBTHEME global (RTL) styles library.
 global-styles-rtl:
@@ -17,24 +53,16 @@ global-styles-rtl:
       css/rtl/theme/header-rtl.theme.css: {}
       css/rtl/theme/content-rtl.theme.css: {}
       css/rtl/theme/footer-rtl.theme.css: {}
+  dependencies:
+    - core/jquery
 
 # VARTHEME_MATERIAL_SUBTHEME global scripts library.
 global-scripts:
   js:
     js/script.js: {}
+  dependencies:
+    - core/jquery
     
-# VARTHEME_MATERIAL_SUBTHEME Varbase Bootstrap Paragraphs colors theme.
-vbp-colors:
-  css:
-    theme:
-      css/theme/vbp-colors.theme.css: {}
-
-# VARTHEME_MATERIAL_SUBTHEME better login theme.
-#betterlogin:
-#  css:
-#    theme:
-#      css/theme/betterlogin.theme.css: {}
-
 # VARTHEME_MATERIAL_SUBTHEME Vartheme Material styles library.
 vartheme_material-styles:
   css:
@@ -46,7 +74,7 @@ vartheme_material-styles-rtl:
   css:
     base:
       css/rtl/base/vartheme_material-rtl.base.css: {}
-
+      
 # VARTHEME_MATERIAL_SUBTHEME Bootstrap global styles library.
 bootstrap-styles:
   css:
@@ -73,9 +101,21 @@ bootstrap-scripts:
     bootstrap/js/popover.js: {}
     bootstrap/js/scrollspy.js: {}
     bootstrap/js/tab.js: {}
-#    bootstrap/js/tooltip.js: {}
     bootstrap/js/transition.js: {}
     
+# VARTHEME_MATERIAL_SUBTHEME Varbase Bootstrap Paragraphs colors theme.
+vbp-colors:
+  css:
+    theme:
+      css/theme/vbp-colors.theme.css: {}
+
+# VARTHEME_MATERIAL_SUBTHEME better login theme.
+#betterlogin:
+#  css:
+#    theme:
+#      css/theme/betterlogin.theme.css: {}
+
+   
 # ------------------------------------------------------------------------------
 # Vartheme Material custom theme, layout, and components.
 # ------------------------------------------------------------------------------

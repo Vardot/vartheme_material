@@ -1,3 +1,33 @@
+# Vartheme Material framework as which could be used to extend bootstrap/framework
+#          vartheme_material/framework = vartheme_material/bootstrap-styles
+#                                      + vartheme_material/bootstrap-scripts
+#                                      + vartheme_material/global-styles
+#                                      + vartheme_material/global-scripts
+#                                      + vartheme_material/bootstrap-print
+framework:
+  css: {}
+  js: {}
+  dependencies:
+    - core/jquery
+    - vartheme_material/bootstrap-styles
+    - vartheme_material/bootstrap-scripts
+    - vartheme_material/global-styles
+    - vartheme_material/global-scripts
+    - vartheme_material/bootstrap-print
+
+# Vartheme Material framework RTL as which could be used to extend bootstrap/framework
+#          vartheme_material/framework-rtl = vartheme_material/bootstrap-rtl
+#                                          + vartheme_material/global-styles-rtl
+#                                          + vartheme_material/bootstrap-print-rtl
+framework-rtl:
+  css: {}
+  js: {}
+  dependencies:
+    - core/jquery
+    - vartheme_material/bootstrap-rtl
+    - vartheme_material/global-styles-rtl
+    - vartheme_material/bootstrap-print-rtl
+
 # Vartheme Material global styles library.
 global-styles:
   css:
@@ -7,6 +37,8 @@ global-styles:
       css/theme/header.theme.css: {}
       css/theme/content.theme.css: {}
       css/theme/footer.theme.css: {}
+  dependencies:
+    - core/jquery
 
 # Vartheme Material global (RTL) styles library.
 global-styles-rtl:
@@ -17,24 +49,16 @@ global-styles-rtl:
       css/rtl/theme/header-rtl.theme.css: {}
       css/rtl/theme/content-rtl.theme.css: {}
       css/rtl/theme/footer-rtl.theme.css: {}
+  dependencies:
+    - core/jquery
 
 # Vartheme Material global scripts library.
 global-scripts:
   js:
     js/script.js: {}
-
-# Vartheme Material Varbase Bootstrap Paragraphs colors theme.
-vbp-colors:
-  css:
-    theme:
-      css/theme/vbp-colors.theme.css: {}
-
-# Vartheme Material better login theme.
-betterlogin:
-  css:
-    theme:
-      css/theme/betterlogin.theme.css: {}
-
+  dependencies:
+    - core/jquery
+    
 # Bootstrap global styles library.
 bootstrap-styles:
   css:
@@ -60,8 +84,19 @@ bootstrap-scripts:
     bootstrap/js/popover.js: {}
     bootstrap/js/scrollspy.js: {}
     bootstrap/js/tab.js: {}
-#    bootstrap/js/tooltip.js: {}
     bootstrap/js/transition.js: {}
+
+# Vartheme Material Varbase Bootstrap Paragraphs colors theme.
+vbp-colors:
+  css:
+    theme:
+      css/theme/vbp-colors.theme.css: {}
+
+# Vartheme Material better login theme.
+betterlogin:
+  css:
+    theme:
+      css/theme/betterlogin.theme.css: {}
 
 # ------------------------------------------------------------------------------
 # Vartheme Material custom theme, layout, and components.
@@ -110,7 +145,7 @@ vb-tags:
   css:
     component:
       css/component/vb-tags.component.css: {}
-      
+
 # Vartheme Material bootstrap card component.
 card:
   css:

@@ -25,7 +25,7 @@
   "require": { },
   "extra": {
     "branch-alias": {
-      "dev-8.x-4.x": "8.4.x-dev"
+      "dev-8.x-5.x": "8.5.x-dev"
     }
   }
 }

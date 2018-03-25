@@ -3,6 +3,7 @@ description: 'A base theme for Varbase standard websites. Based on Bootstrap the
 type: theme
 package: 'Varbase (Experimental)'
 core: 8.x
+version: 8.x-5.x-dev
 base theme: bootstrap
 
 regions:

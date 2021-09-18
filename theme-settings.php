@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\Core\Link;
 /**
  * @file
  * theme-settings.php
@@ -40,7 +41,7 @@ function vartheme_material_form_system_theme_settings_alter(&$form, FormStateInt
     '#type' => 'checkbox',
     '#title' => t('Header Fluid Container'),
     '#description' => t('Use <code>.container-fluid</code> class instead of <code>.container</code> for the Header region.<br />See: @vartheme_material_link', array(
-      '@vartheme_material_link' => Drupal::l('Fluid container', Url::fromUri('http://getbootstrap.com/css/', ['absolute' => TRUE, 'fragment' => 'grid-example-fluid'])),
+      '@vartheme_material_link' => Link::fromTextAndUrl('Fluid container', Url::fromUri('http://getbootstrap.com/css/', ['absolute' => TRUE, 'fragment' => 'grid-example-fluid'])),
     )),
     '#default_value' => theme_get_setting('header_container'),
   );
